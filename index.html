@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EduLab</title>
+<meta name="generator" content="WYSIWYG Web Builder 19 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Безымянный1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="anime.min.js"></script>
+<script src="polymorph.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var shapePath = document.querySelector('#MorphingIcon1-shape');
+   var paths = ["M28 0 L36 17 L56 20 L41 35 L45 54 L28 44 L11 54 L14 35 L0 20 L19 17Z ", 
+                "M28 0 L33 14 L48 8 L41 22 L56 27 L41 32 L48 46 L33 39 L28 54 L22 39 L8 46 L15 32 L0 27 L15 22 L8 8 L22 14Z ", 
+                "M28 0 L36 17 L56 20 L41 35 L45 54 L28 44 L11 54 L14 35 L0 20 L19 17Z ", 
+                "M28 0 L38 17 L56 27 L38 36 L28 54 L18 36 L0 27 L18 17Z ", 
+                "M14 0 L42 0 L56 14 L56 41 L42 54 L14 54 L0 41 L0 14Z ", 
+                "M56 27 C56 42, 44 54, 28 54 C12 54, 0 42, 0 27 C0 12, 12 0, 28 0 C44 0, 56 12, 56 27"];
+   var interpolator = [];
+   interpolator[0] = polymorph.interpolate([paths[0], paths[1]]);
+   interpolator[1] = polymorph.interpolate([paths[1], paths[2]]);
+   interpolator[2] = polymorph.interpolate([paths[2], paths[3]]);
+   interpolator[3] = polymorph.interpolate([paths[3], paths[4]]);
+   interpolator[4] = polymorph.interpolate([paths[4], paths[5]]);
+   interpolator[5] = polymorph.interpolate([paths[5], paths[0]]);
+   let progress = { prop: 0 };
+   var pathIndex = 0;
+   anime({
+      targets: progress,
+      prop: 1,
+      delay: 0,
+      duration: 2000,
+      easing: 'easeInOutCirc',
+      loop: true,
+      direction: 'normal',
+      update(anim) 
+      {
+         shapePath.setAttribute('d', interpolator[pathIndex](progress.prop));
+         if (anim.progress == 100)
+         {
+            pathIndex++;
+            if (pathIndex > 5)
+               pathIndex = 0;
+         }
+      }
+   });
+});
+</script>
+<script src="wwb19.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1">
+<img src="images/ai__4TJN.png" id="Image1" alt="" width="203" height="79">
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#F5F5F5;font-family:'Bahnschrift SemiBold';font-size:32px;">Приветсвуем вас!</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid10">
+<div id="LayoutGrid10">
+<div class="row">
+<div class="col-1">
+<a id="Button13" href="https://github.com/Revellison/EduLabApp">Github</a>
+<a id="Button16" href="#" onclick="ShowObjectWithEffect('wb_faqGrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_glavnoya', 0, 'fade', 200, 'easeInOutCirc');return false;">Хронология</a>
+<a id="Button7" href="" onclick="ShowObjectWithEffect('wb_projectgrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_faqGrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_glavnoya', 0, 'fade', 1);return false;">Проект</a>
+<a id="Button15" href="" onclick="ShowObjectWithEffect('wb_faqGrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);ShowObjectWithEffect('wb_glavnoya', 0, 'fade', 1);return false;">Вопросы</a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid11">
+<div id="LayoutGrid11">
+<div class="row">
+<div class="col-1">
+<a id="Button18" href="https://github.com/Revellison/EduLabApp">Github</a>
+<a id="Button19" href="#" onclick="ShowObjectWithEffect('wb_faqGrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_glavnoya', 0, 'fade', 200, 'easeInOutCirc');return false;">Хронология</a>
+<a id="Button21" href="" onclick="ShowObjectWithEffect('wb_faqGrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);ShowObjectWithEffect('wb_glavnoya', 0, 'fade', 1);return false;">Вопросы</a>
+<a id="Button20" href="" onclick="ShowObjectWithEffect('wb_projectgrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_faqGrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_glavnoya', 0, 'fade', 1);return false;">Проект</a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_downloadgrid">
+<div id="downloadgrid">
+<div class="row">
+<div class="col-1">
+<a id="Button17" href="#" onclick="ShowObjectWithEffect('wb_glavnoya', 1, 'fade', 1);ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);ShowObjectWithEffect('wb_faqGrid', 0, 'fade', 1);return false;">Главная</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+<div class="col-3">
+</div>
+<div class="col-4">
+</div>
+<div class="col-5">
+<a id="Button3" href="https://github.com/Revellison/EduLabApp">Github</a>
+</div>
+<div class="col-6">
+<a id="Button12" href="#" onclick="ShowObjectWithEffect('wb_faqGrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('Button12', 0, 'fade', 1);ShowObjectWithEffect('glav_button', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_glavnoya', 0, 'fade', 1);ShowObjectWithEffect('glav_button2', 0, 'fade', 1);ShowObjectWithEffect('glav_button3', 0, 'fade', 1);ShowObjectWithEffect('Button2', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('Button4', 1, 'fade', 500, 'easeInOutCirc');return false;">Хронология</a>
+<a id="glav_button" href="#" onclick="ShowObjectWithEffect('wb_glavnoya', 1, 'fade', 1);ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);ShowObjectWithEffect('wb_faqGrid', 0, 'fade', 1);ShowObjectWithEffect('glav_button', 0, 'fade', 1);ShowObjectWithEffect('Button12', 1, 'fade', 500, 'easeInOutCirc');return false;">Главная</a>
+</div>
+<div class="col-7">
+<a id="Button2" href="" onclick="ShowObjectWithEffect('wb_projectgrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_faqGrid', 0, 'fade', 200, 'easeInOutCirc');ShowObjectWithEffect('wb_glavnoya', 0, 'fade', 1);ShowObjectWithEffect('Button2', 0, 'fade', 1);ShowObjectWithEffect('glav_button2', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('glav_button', 0, 'fade', 1);ShowObjectWithEffect('Button12', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('glav_button3', 0, 'fade', 1);ShowObjectWithEffect('Button4', 1, 'fade', 1);return false;">Проект</a>
+<a id="glav_button2" href="#" onclick="ShowObjectWithEffect('wb_glavnoya', 1, 'fade', 1);ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);ShowObjectWithEffect('wb_faqGrid', 0, 'fade', 1);ShowObjectWithEffect('glav_button2', 0, 'fade', 1);ShowObjectWithEffect('Button2', 1, 'fade', 500, 'easeInOutCirc');return false;">Главная</a>
+</div>
+<div class="col-8">
+<a id="Button4" href="" onclick="ShowObjectWithEffect('wb_faqGrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);ShowObjectWithEffect('wb_glavnoya', 0, 'fade', 1);ShowObjectWithEffect('Button4', 0, 'fade', 1);ShowObjectWithEffect('glav_button3', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('glav_button', 0, 'fade', 1);ShowObjectWithEffect('glav_button2', 0, 'fade', 1);ShowObjectWithEffect('Button12', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('Button2', 1, 'fade', 500, 'easeInOutCirc');return false;">Вопросы</a>
+<a id="glav_button3" href="#" onclick="ShowObjectWithEffect('wb_glavnoya', 1, 'fade', 1);ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);ShowObjectWithEffect('wb_faqGrid', 0, 'fade', 1);ShowObjectWithEffect('glav_button3', 0, 'fade', 1);ShowObjectWithEffect('Button4', 1, 'fade', 500, 'easeInOutCirc');return false;">Главная</a>
+</div>
+<div class="col-9">
+</div>
+<div class="col-10">
+</div>
+<div class="col-11">
+</div>
+<div class="col-12">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_projectgrid">
+<div id="projectgrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_MorphingIcon1">
+<svg id="MorphingIcon1" height="100%" width="100%" viewBox="0 0 56 54" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+   <path id="MorphingIcon1-shape" d="M28 0 L36 17 L56 20 L41 35 L45 54 L28 44 L11 54 L14 35 L0 20 L19 17Z " vector-effect="non-scaling-stroke" />
+</defs>
+<use xlink:href="#MorphingIcon1-shape" data-href="#MorphingIcon1-shape" style="fill:#F8F8F8;stroke:#D2D2D2;stroke-width:1"/>
+</svg>
+
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="row">
+<div class="col-1">
+<a id="Button6" href="" onclick="ShowObjectWithEffect('wb_faqGrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);return false;">План</a>
+<a id="Button8" href="" onclick="ShowObjectWithEffect('wb_faqGrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);return false;">Актуальность</a>
+<a id="Button5" href="" onclick="ShowObjectWithEffect('wb_faqGrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);return false;">Цель</a>
+<a id="Button9" href="" onclick="ShowObjectWithEffect('wb_faqGrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);return false;">Задачи</a>
+<a id="Button10" href="" onclick="ShowObjectWithEffect('wb_faqGrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);return false;">Гипотеза</a>
+<a id="Button11" href="" onclick="ShowObjectWithEffect('wb_faqGrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('wb_changeloggrid', 0, 'fade', 1);ShowObjectWithEffect('wb_projectgrid', 0, 'fade', 1);return false;">....</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text2">
+<span style="color:#D3D3D3;font-family:'Bahnschrift SemiBold';font-size:13px;">### 1. Титульный лист<br>**Название проекта**:&nbsp; <br>**Инновации IT: Разработка интеллектуальной системы с помощью нейросетей**&nbsp; <br>**Автор**:&nbsp;&nbsp; <br>**ФИО студента, класс или курс**&nbsp; <br>**Руководитель проекта**:&nbsp; <br>**Дата**:&nbsp; <br><br>---<br><br>### 2. Содержание:<br>1. Введение&nbsp; <br>2. Основная часть&nbsp; <br>&nbsp;&nbsp; 2.1. Теоретическая глава&nbsp; <br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2.1.1. Введение в нейросети: определение, виды и применение&nbsp; <br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2.1.2. Историческое развитие нейросетей и текущие инновации&nbsp; <br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2.1.3. Краткий обзор архитектур нейросетей и их особенностей&nbsp; <br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2.1.4. Примеры успешных IT-продуктов, основанных на нейросетях&nbsp; <br>&nbsp;&nbsp; 2.2. Практическая глава&nbsp; <br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2.2.1. Определение задачи: описание проблемы и целей разработки&nbsp; <br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2.2.2. Архитектура разработанной нейросети&nbsp; <br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2.2.3. Описание и разработка модели: шаги и используемые инструменты&nbsp; <br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2.2.4. Тестирование и оптимизация модели&nbsp; <br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2.2.5. Внедрение и оценка эффективности продукта&nbsp; <br>3. Заключение&nbsp; <br>4. Список источников&nbsp; <br>5. Приложения (коды, модели, графики, результат работы нейросети)&nbsp; <br><br>---<br><br>### 3. Введение:<br>Введение объясняет актуальность темы разработки интеллектуальных систем на основе нейросетей в IT, с акцентом на современные вызовы, такие как автоматизация рутинных процессов, анализ больших данных и решение сложных задач в реальном времени.&nbsp; <br>**Пример**:&nbsp; <br>Современные информационные технологии неразрывно связаны с внедрением нейросетей в такие сферы, как распознавание изображений, обработка речи и анализ данных. Проект нацелен на создание инновационного продукта, способного решать конкретную задачу, с применением методов машинного обучения и искусственных нейронных сетей. Развитие и использование нейросетей сегодня становится ключом к разработке более эффективных, масштабируемых и умных систем.<br><br>---<br><br>### 4. Основная часть:<br><br>#### 4.1. Теоретическая глава:<br><br>**4.1.1. Введение в нейросети: определение, виды и применение:**&nbsp; <br>- Основные понятия искусственных нейронных сетей (ANN).&nbsp; <br>- Описание видов нейросетей: CNN (сверточные нейросети), RNN (рекуррентные нейросети), GAN (генеративные состязательные сети) и их особенности.<br><br>**4.1.2. Историческое развитие нейросетей и текущие инновации:**&nbsp; <br>- Краткий исторический обзор нейросетей, начиная с работы Уоррена МакКаллока и Уолтера Питтса (1940-е), до современных глубоких нейросетей.&nbsp; <br>- Современные направления в развитии нейросетей, такие как трансформеры и языковые модели (GPT, BERT).<br><br>**4.1.3. Краткий обзор архитектур нейросетей и их особенностей:**&nbsp; <br>- Сравнение архитектур CNN, RNN и современных трансформеров для решения различных задач.&nbsp; <br>- Описание принципов работы этих сетей на примерах реальных применений.<br><br>**4.1.4. Примеры успешных IT-продуктов, основанных на нейросетях:**&nbsp; <br>- Примеры использования нейросетей в таких продуктах, как Siri, Google Assistant, Tesla Autopilot и других инновационных разработках.<br><br>#### 4.2. Практическая глава:<br><br>**4.2.1. Определение задачи: описание проблемы и целей разработки:**&nbsp; <br>- В этой части будет представлена постановка задачи, которую решает проект. Например, это может быть создание нейросети для автоматической классификации изображений (распознавание объектов), прогнозирование временных рядов или разработка чат-бота с элементами NLP (Natural Language Processing).&nbsp; <br>- Описание требований к продукту, целевой аудитории и критериев успеха.<br><br>**4.2.2. Архитектура разработанной нейросети:**&nbsp; <br>- Выбор архитектуры нейросети для решения задачи (например, сверточная сеть для классификации изображений или рекуррентная сеть для анализа последовательностей).&nbsp; <br>- Описание слоев сети, количества нейронов и их функции активации.<br><br>**4.2.3. Описание и разработка модели: шаги и используемые инструменты:**&nbsp; <br>- Пошаговое описание процесса разработки модели.&nbsp; <br>- Использование языков и библиотек, таких как Python, TensorFlow, PyTorch, Keras.&nbsp; <br>- Примеры кода для обучения модели на реальных данных.<br><br>**4.2.4. Тестирование и оптимизация модели:**&nbsp; <br>- Описание процесса обучения модели, включая выбор набора данных, разделение на тренировочные и тестовые выборки.&nbsp; <br>- Применение методов тестирования (например, кросс-валидация) и оценки качества модели (точность, полнота, F-мера).&nbsp; <br>- Методы оптимизации модели, такие как уменьшение переобучения, настройка гиперпараметров.<br><br>**4.2.5. Внедрение и оценка эффективности продукта:**&nbsp; <br>- Описание внедрения разработанного продукта в реальную среду, возможные сценарии использования.&nbsp; <br>- Оценка эффективности продукта, сравнение результатов до и после использования нейросети.&nbsp; <br>- Обсуждение возможных улучшений и будущих направлений для развития проекта.<br><br>---<br><br>### 5. Заключение:<br>В заключении необходимо подвести итоги проделанной работы, включая анализ успешности использования нейросетей для решения задачи. Оценить влияние инноваций в нейросетях на разработку IT-продуктов и сделать прогнозы на будущее развитие этой технологии.<br><br>---<br><br>### 6. Список источников:<br>Включить все использованные научные и технические источники информации, такие как статьи, книги, документация по инструментам и языкам программирования.<br><br>---<br><br>### 7. Приложения:<br>Здесь размещаются дополнительные материалы проекта:<br>- Полный исходный код разработанной нейросети.<br>- Описание настроек среды разработки и зависимостей.<br>- Скриншоты результатов работы модели.<br>- Таблицы с результатами тестирования, графики и схемы.<br><br>---<br><br>### Пример продукта:<br>**Проект**: Разработка системы классификации изображений (например, распознавание рукописных цифр с помощью набора данных MNIST) или чат-бота на основе нейросети (например, использование GPT или LSTM для генерации текстов).<br><br>1. **Цель проекта**: создать систему, способную автоматически распознавать объекты (например, цифры, изображения животных) или отвечать на вопросы пользователей с помощью чат-бота.&nbsp; <br>2. **Процесс разработки**: обучение нейросети на большом наборе данных (например, MNIST, CIFAR-10), настройка модели и ее тестирование.&nbsp; <br>3. **Результат**: продукт, который можно продемонстрировать — например, веб-приложение или локальное ПО, показывающее, как нейросеть выполняет задачу.<br><br>**Дополнительно**: В проекте можно также создать отчет о сравнении различных моделей (например, сверточной и рекуррентной) для решения одной и той же задачи, что сделает работу еще более объемной и академически значимой.<br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_faqGrid">
+<div id="faqGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text3">
+<span style="color:#DCDCDC;font-family:'Bahnschrift SemiBold';font-size:16px;"><strong>Почему я не могу скачать программу?</strong></span>
+</div>
+<div id="wb_Text4">
+<span style="color:#C0C0C0;font-family:'Bahnschrift SemiBold';font-size:16px;">- пакачену</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_changeloggrid">
+<div id="changeloggrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text5">
+<span style="color:#DCDCDC;font-family:'Bahnschrift SemiBold';font-size:21px;">Обновление&nbsp; </span><span style="color:#DC143C;font-family:'Bahnschrift SemiBold';font-size:21px;">v0.5</span>
+</div>
+<div id="wb_Text7">
+<span style="color:#B22222;font-family:'Bahnschrift SemiBold';font-size:16px;">&#1044;</span><span style="color:#D3D3D3;font-family:'Bahnschrift SemiBold';font-size:16px;">&#1086;&#1073;&#1072;&#1074;&#1083;&#1077;&#1085;&#1072; &#1089;&#1080;&#1089;&#1090;&#1077;&#1084;&#1072; &#1087;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1080; &#1090;&#1077;&#1082;&#1089;&#1090;&#1072;</span>
+</div>
+<div id="wb_Text6">
+<span style="color:#A52A2A;font-family:'Bahnschrift SemiBold';font-size:16px;">С</span><span style="color:#DCDCDC;font-family:'Bahnschrift SemiBold';font-size:16px;">оздано тестовое графическое меню</span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="row">
+<div class="col-1">
+<a id="Button1" href="">Загрузить</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_glavnoya">
+<div id="glavnoya">
+<div class="row">
+<div class="col-1">
+<div id="wb_LayoutGrid14">
+<div id="LayoutGrid14">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text8">
+<span style="color:#F5F5F5;font-family:'Bahnschrift SemiBold';font-size:24px;">Программа разработанная специально для школьного проекта, с использованием нейросети</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid15">
+<div id="LayoutGrid15">
+<div class="row">
+<div class="col-1">
+<input type="button" id="Button14" onclick="ShowObjectWithEffect('wb_appgrid', 0, 'fade', 1);ShowObjectWithEffect('Button14', 0, 'fade', 1);ShowObjectWithEffect('app', 1, 'fade', 700, 'easeInOutCirc');ShowObjectWithEffect('wb_LayoutGrid9', 1, 'fade', 700, 'easeInOutCirc');return false;" name="" value="Установить">
+<input type="button" id="app" onclick="ShowObjectWithEffect('wb_LayoutGrid9', 0, 'fade', 1);ShowObjectWithEffect('wb_appgrid', 1, 'fade', 500, 'easeInOutCirc');ShowObjectWithEffect('app', 0, 'fade', 1);ShowObjectWithEffect('Button14', 1, 'fade', 500, 'easeInOutCirc');return false;" name="" value="Назад">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_appgrid">
+<div id="appgrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_Section1" class="card">
+<div id="Section1-card-body">
+<div id="Section1-card-item0">Исправитель текста</div>
+<div id="Section1-card-item1">Анализ текста</div>
+<div id="Section1-card-item2">Переводчик</div>
+<div id="Section1-card-item3">Другое</div>
+<div id="Section1-card-item4"><img src="images/Снимок экрана 2024-10-10 184046.png" width="534" height="576" alt="" title=""></div>
+<div id="Section1-card-item5"></div>
+<div id="Section1-card-item6"></div>
+<div id="Section1-card-item7"></div>
+<div id="Section1-card-item8"></div>
+<div id="Section1-card-item9"></div>
+<div id="Section1-card-item10"></div>
+<div id="Section1-card-item11"></div>
+<div id="Section1-card-item12"></div>
+<div id="Section1-card-item13"></div>
+<div id="Section1-card-item14"></div>
+<div id="Section1-card-item15"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
+<div class="row">
+<div class="col-1">
+<div id="Html3">
+
+<div class="card">
+  <svg fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-146 129 218 256" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M-2.9,150.4l2.8-4.2l2.8-4.1l6.2-9.3c0.8-1.1,0.5-2.7-0.7-3.4c-1.1-0.8-2.7-0.5-3.4,0.7l-6.6,9.9l-2.8,4.2l-2.8,4.2 c-9-3.5-18.9-5.4-29.5-5.4c-10.5,0-20.5,1.9-29.5,5.4l-2.8-4.2L-72,140l-6.6-9.9c-0.8-1.1-2.3-1.4-3.4-0.7 c-1.1,0.8-1.4,2.3-0.7,3.4l6.2,9.3l2.8,4.1l2.8,4.2c-21,9.8-35.3,28.3-35.3,49.6H32.5C32.4,178.7,18.2,160.2-2.9,150.4z M-66.7,180.1c-4.1,0-7.4-3.3-7.4-7.4c0-4.1,3.3-7.4,7.4-7.4c4.1,0,7.4,3.3,7.4,7.4S-62.6,180.1-66.7,180.1z M-7.3,180.1 c-4.1,0-7.4-3.3-7.4-7.4c0-4.1,3.3-7.4,7.4-7.4c4.1,0,7.4,3.3,7.4,7.4C0.2,176.8-3.1,180.1-7.3,180.1z"></path> <path d="M-105.3,209.8l-1.1,0.1v12.3v10.1v86.6c0,8.7,7,15.7,15.7,15.7h11.3c-0.4,1.3-0.6,2.7-0.6,4.1v0.8v5v25.6 c0,8.2,6.7,14.9,14.9,14.9s14.9-6.7,14.9-14.9v-25.6v-5v-0.8c0-1.4-0.2-2.8-0.6-4.1h27.6c-0.4,1.3-0.6,2.7-0.6,4.1v0.8v5v25.6 c0,8.2,6.7,14.9,14.9,14.9c8.2,0,14.9-6.7,14.9-14.9v-25.6v-5v-0.8c0-1.4-0.2-2.8-0.6-4.1h11.3c8.7,0,15.7-7,15.7-15.7v-86.6v-10.1 v-12.4h-1.1H-105.3z"></path> <path d="M-131.1,209.9c-8.2,0-14.9,6.7-14.9,14.9v63.6c0,8.2,6.7,14.9,14.9,14.9c8.2,0,14.9-6.7,14.9-14.9v-63.6 C-116.3,216.5-122.9,209.9-131.1,209.9z"></path> <path d="M57.2,209.9c-8.2,0-14.9,6.7-14.9,14.9v63.6c0,8.2,6.7,14.9,14.9,14.9s14.9-6.7,14.9-14.9v-63.6 C72,216.5,65.4,209.9,57.2,209.9z"></path> </g> </g></svg>
+  <div class="card__content">
+    <p class="card__title">Android</p>
+    <p class="card__description">
+      Нажмите что бы начать установку
+    </p>
+  <button class="button">
+    <span class="button-content">Download </span>
+</button>
+  </div>
+</div>
+
+
+</div>
+<div id="Html4">
+
+<div class="card">
+  <svg fill="#383838" width="64px" height="64px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#383838"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1863.53 1016.437c31.171 0 56.47 25.299 56.47 56.47v790.589c0 16.376-7.115 31.849-19.313 42.465-10.39 9.149-23.605 14.005-37.158 14.005-2.484 0-5.082-.113-7.567-.452l-903.53-123.331c-28.008-3.84-48.903-27.784-48.903-56.02v-667.256c0-31.171 25.3-56.47 56.471-56.47Zm-1129.412 0c31.171 0 56.47 25.299 56.47 56.47v634.504c0 16.376-7.115 31.85-19.426 42.579-10.39 9.035-23.491 13.891-37.044 13.891-2.485 0-5.196-.113-7.68-.564L48.79 1669.35C20.78 1665.51 0 1641.68 0 1613.444v-540.537c0-31.171 25.299-56.47 56.47-56.47Zm-7.726-859.855c16.151-2.372 32.415 2.597 44.725 13.327 12.424 10.73 19.426 26.315 19.426 42.579V846.99c0 31.285-25.186 56.47-56.47 56.47H56.424c-31.171 0-56.47-25.185-56.47-56.47V306.455c0-28.123 20.781-52.066 48.79-55.906ZM1855.974.474c16.15-2.033 32.414 2.71 44.724 13.44 12.198 10.73 19.313 26.203 19.313 42.466v790.588c0 31.285-25.299 56.471-56.47 56.471H960.01c-31.171 0-56.47-25.186-56.47-56.47V179.711c0-28.235 20.78-52.066 48.903-55.906Z" fill-rule="evenodd"></path> </g></svg>
+  <div class="card__content">
+    <p class="card__title">Windows 10 or 11</p>
+    <p class="card__description">
+      Нажмите что бы начать загрузку
+    </p>
+<a href="https://example.com/download" target="_blank">
+<button class="button">
+    <span class="button-content">Download </span>
+</button>
+</a>
+  <p class="card__description">
+      
+      Внимание! Данное приложение не работает на версиях ниже
+      Windows 10.
+    </p>
+  </div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var el = document.getElementById('wb_Text1');
+if (el.addEventListener)
+{
+   el.addEventListener('animationend', onAnimationEndText1);
+}
+function onAnimationEndText1(e)
+{
+   ShowObjectWithEffect('wb_Text1', 0, 'fade', 500, 'easeInOutCirc');
+}
+</script>
+<div id="preloader"></div>
+</body>
+</html>
