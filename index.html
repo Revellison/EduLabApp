@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Безымянная страница</title>
+<title>EduLab</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="logo_white.ico" rel="shortcut icon" type="image/x-icon">
 <link href="fontawesome6.min.css" rel="stylesheet">
 <link href="Безымянный1.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
@@ -66,7 +67,7 @@ $(document).ready(function()
    $("a[href*='#Bookmark2']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark2').offset().top }, 1000, 'easeInOutCirc');
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark2').offset().top }, 500, 'easeInCirc');
    });
    $("a[href*='#LayoutGrid6']").click(function(event)
    {
@@ -78,6 +79,11 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'linear');
    });
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
 });
 </script>
 </head>
@@ -290,5 +296,6 @@ $(document).ready(function()
 </div>
 </div>
 </div>
+<div id="preloader"></div>
 </body>
 </html>

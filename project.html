@@ -3,9 +3,22 @@
 <head>
 <meta charset="utf-8">
 <title>EduLab Project</title>
+<link href="logo_black.ico" rel="shortcut icon" type="image/x-icon">
 <link href="Безымянный1.css" rel="stylesheet">
 <link href="project.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
 </head>
 <body>
+<div id="preloader"></div>
 </body>
 </html>

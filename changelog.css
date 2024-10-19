@@ -13,6 +13,15 @@ body
 {
    visibility: hidden;
 }
+#preloader
+{
+   background: #101010 url("images/shar2.gif") no-repeat center center;
+   bottom: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 99999;
+}
 #wb_LayoutGrid1
 {
    clear: both;
@@ -195,9 +204,11 @@ body
    margin: 15px 15px 15px 15px;
    animation: animate-fade-in 700ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
    background-color: transparent;
-   background-image: url('images/plufow-le-studio-ailrGVN0xNA-unsplash.jpg');
+   background-image: url('images/plufow-le-studio-wqOCi56-3Lo-unsplash.jpg');
    background-repeat: no-repeat;
    background-position: center center;
+   background-attachment: scroll;
+   background-size: cover;
    border: 1px solid rgba(199,199,199,0.00);
    border-radius: 8px;
    text-align: left;
@@ -264,9 +275,11 @@ body
    margin: 15px 15px 15px 15px;
    animation: animate-fade-in 800ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
    background-color: transparent;
-   background-image: url('images/plufow-le-studio-ailrGVN0xNA-unsplash.jpg');
+   background-image: url('images/plufow-le-studio-wqOCi56-3Lo-unsplash.jpg');
    background-repeat: no-repeat;
    background-position: center center;
+   background-attachment: scroll;
+   background-size: cover;
    border: 1px solid rgba(199,199,199,0.00);
    border-radius: 8px;
    text-align: left;
@@ -368,9 +381,11 @@ body
    margin: 15px 15px 15px 15px;
    animation: animate-fade-in 900ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
    background-color: transparent;
-   background-image: url('images/plufow-le-studio-ailrGVN0xNA-unsplash.jpg');
+   background-image: url('images/plufow-le-studio-wqOCi56-3Lo-unsplash.jpg');
    background-repeat: no-repeat;
    background-position: center center;
+   background-attachment: scroll;
+   background-size: cover;
    border: 1px solid rgba(199,199,199,0.00);
    border-radius: 8px;
    text-align: left;
@@ -437,9 +452,11 @@ body
    margin: 15px 15px 15px 15px;
    animation: animate-fade-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
    background-color: transparent;
-   background-image: url('images/plufow-le-studio-ailrGVN0xNA-unsplash.jpg');
+   background-image: url('images/plufow-le-studio-wqOCi56-3Lo-unsplash.jpg');
    background-repeat: no-repeat;
-   background-position: center center;
+   background-position: right center;
+   background-attachment: scroll;
+   background-size: cover;
    border: 1px solid rgba(199,199,199,0.00);
    border-radius: 8px;
    text-align: left;
@@ -1321,6 +1338,12 @@ body
    flex-shrink: 1;
    flex-basis: 0%;
    align-self: auto;
+   background-color: transparent;
+   background-image: url('images/plufow-le-studio-wqOCi56-3Lo-unsplash.jpg');
+   background-repeat: no-repeat;
+   background-position: right center !important;
+   background-attachment: scroll;
+   background-size: cover;
 }
 #Card3-card-item0
 {
@@ -1931,6 +1954,12 @@ body
    flex-shrink: 1;
    flex-basis: 0%;
    align-self: auto;
+   background-color: transparent;
+   background-image: url('images/plufow-le-studio-wqOCi56-3Lo-unsplash.jpg');
+   background-repeat: no-repeat;
+   background-position: right center !important;
+   background-attachment: scroll;
+   background-size: cover;
 }
 #Card3-card-item0
 {
@@ -2541,6 +2570,12 @@ body
    flex-shrink: 1;
    flex-basis: 0%;
    align-self: auto;
+   background-color: transparent;
+   background-image: url('images/plufow-le-studio-wqOCi56-3Lo-unsplash.jpg');
+   background-repeat: no-repeat;
+   background-position: right center !important;
+   background-attachment: scroll;
+   background-size: cover;
 }
 #Card3-card-item0
 {
