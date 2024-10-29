@@ -8,35 +8,9 @@
 <link href="Безымянный1.css" rel="stylesheet">
 <link href="changelog.css" rel="stylesheet">
 <script src="jquery-3.7.1.min.js"></script>
-<script src="wwb19.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   $('#intro7Heading').addClass('visibility-hidden');
-   function onScrollHeading1()
-   {
-      var $obj = $("#wb_Heading1");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('intro7Heading', 'vanish-in', 100, 1000);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('intro7Heading', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_Heading1').inViewPort(true))
-   {
-      $('#wb_Heading1').addClass("in-viewport");
-   }
-   onScrollHeading1();
-   $(window).scroll(function(event)
-   {
-      onScrollHeading1();
-   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -46,14 +20,66 @@ $(window).on('load', function()
 </script>
 </head>
 <body>
+<div id="wb_LayoutGrid11">
+<div id="LayoutGrid11">
+<div class="col-1">
+
+<div id="wb_Text5">
+<div id="Text5-max-width">
+<span style="color:#FFFFFF;font-family:'Integral CF';font-size:29px;">EduLab</span>
+</div>
+</div>
+</div>
+<div class="col-2">
+<a id="Button6" href="./index.html">Назад</a>
+<a id="Button15" href="./project.html">Проект</a>
+<a id="Button13" href="./faq.html">F.A.Q</a>
+<a id="Button16" href="https://github.com/Revellison/EduLabApp">Source</a>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading1">
-<h1 id="Heading1">Здесь вы можете установить более ранние версии программы</h1>
 </div>
-<a id="Button6" href="./index.html">Назад</a>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="col-1">
+<div id="wb_Image1">
+<img src="images/placeholder-square.jpg" id="Image1" alt="" width="180" height="180">
+</div>
+<div id="wb_Text1">
+<span style="color:#FFFFFF;font-family:'Integral CF';font-size:16px;">Edulab 1.0</span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image3">
+<img src="images/logo.png" id="Image3" alt="" width="180" height="180">
+</div>
+<div id="wb_Text2">
+<span style="color:#FFFFFF;font-family:'Integral CF';font-size:16px;">Edulab 1.2</span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Image2">
+<img src="images/logo (2).png" id="Image2" alt="" width="180" height="180">
+</div>
+<div id="wb_Text3">
+<span style="color:#FFFFFF;font-family:'Integral CF';font-size:16px;">Edulab 1.2.1</span>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_Image5">
+<img src="images/logo_black.png" id="Image5" alt="" width="180" height="180">
+</div>
+<div id="wb_Text4">
+<span style="color:#FFFFFF;font-family:'Integral CF';font-size:16px;">Edulab 1.2.3</span>
 </div>
 </div>
 </div>

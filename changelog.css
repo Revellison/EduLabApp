@@ -9,10 +9,6 @@ body
    margin: 0;
    padding: 0;
 }
-.visibility-hidden
-{
-   visibility: hidden;
-}
 #preloader
 {
    background: #101010 url("images/shar2.gif") no-repeat center center;
@@ -21,6 +17,111 @@ body
    top: 0;
    width: 100%;
    z-index: 99999;
+}
+#wb_LayoutGrid11
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: url('images/changelog_LayoutGrid11_bkgrnd.png');
+   background-repeat: repeat;
+   background-position: left top;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+   animation: animate-fade-in-down 700ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both, background-position-top-left 5000ms cubic-bezier(0.075, 0.82, 0.165, 1) 1200ms infinite normal both;
+}
+#LayoutGrid11
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 10px 0 10px 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid11 > .col-1, #LayoutGrid11 > .col-2, #LayoutGrid11 > .col-3
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid11
+{
+   width: 970px;
+}
+#LayoutGrid11 > .col-1, #LayoutGrid11 > .col-2, #LayoutGrid11 > .col-3
+{
+   flex: 0 0 auto;
+}
+#LayoutGrid11 > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 33.33333333%;
+   max-width: 33.33333333%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid11 > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 50%;
+   max-width: 50%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid11 > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 16.66666667%;
+   max-width: 16.66666667%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 969px)
+{
+#LayoutGrid11
+{
+   width: 100%;
+}
+#LayoutGrid11 > .col-1, #LayoutGrid11 > .col-2, #LayoutGrid11 > .col-3
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
 }
 #wb_LayoutGrid1
 {
@@ -92,34 +193,118 @@ body
    width: 100% !important;
 }
 }
-#wb_Heading1
+#wb_LayoutGrid2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1200px;
+}
+#LayoutGrid2
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2, #LayoutGrid2 > .col-3, #LayoutGrid2 > .col-4
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2, #LayoutGrid2 > .col-3, #LayoutGrid2 > .col-4
+{
+   flex: 0 0 auto;
+}
+#LayoutGrid2 > .col-1
 {
    background-color: transparent;
    background-image: none;
-   border: 0px solid #000000;
+   border: 0px solid #FFFFFF;
    border-radius: 0px;
-   box-sizing: border-box;
-   vertical-align: top;
-   margin: 0 0 15px 0 ;
-   padding: 0;
-   animation: animate-fade-in-down 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: center;
    text-align: center;
 }
-#Heading1
+#LayoutGrid2 > .col-2
 {
-   color: #FFFFFF;
-   font-family: "Bahnschrift SemiBold";
-   font-weight: bold;
-   font-style: normal;
-   font-size: 35px;
-   margin: 0;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
    text-align: center;
-   text-transform: none;
 }
-#Heading1 a
+#LayoutGrid2 > .col-3
 {
-   color: inherit;
-   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid2 > .col-4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2, #LayoutGrid2 > .col-3, #LayoutGrid2 > .col-4
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
 }
 #Button6
 {
@@ -131,7 +316,7 @@ body
    border-radius: 0px;
    background-color: transparent;
    background-image: none;
-   color: #F5F5F5;
+   color: #FF4500;
    font-family: Bahnschrift;
    font-weight: normal;
    font-style: normal;
@@ -158,6 +343,7 @@ body
 }
 #wb_article11CardContainer
 {
+   display: none;
    background-color: #101010;
    background-image: none;
    border: 0px solid #CCCCCC;
@@ -335,6 +521,7 @@ body
 }
 #wb_CardContainer1
 {
+   display: none;
    background-color: #101010;
    background-image: none;
    border: 0px solid #CCCCCC;
@@ -1034,68 +1221,449 @@ body
 {
    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
 }
+#wb_Image1
+{
+   margin: 20px 0 10px 0 ;
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   animation: animate-fade-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+   display: inline-block;
+   width: 180px;
+   height: 180px;
+   vertical-align: top;
+}
+#Image1, #wb_Image1:hover
+{
+   margin-top: 5px;
+   transition: margin-top 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#Image1, #wb_Image1
+{
+   transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#Image1, #wb_Image1:active
+{
+   margin-top: 7px;
+   transition: margin-top 50ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#wb_Image2
+{
+   margin: 20px 0 10px 0 ;
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   animation: animate-fade-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 200ms 1 normal both;
+   display: inline-block;
+   width: 180px;
+   height: 180px;
+   vertical-align: top;
+}
+#Image2, #wb_Image2:hover
+{
+   margin-top: 5px;
+   transition: margin-top 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#Image2, #wb_Image2
+{
+   transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#Image2, #wb_Image2:active
+{
+   margin-top: 7px;
+   transition: margin-top 50ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#wb_Image3
+{
+   margin: 20px 0 10px 0 ;
+   vertical-align: top;
+}
+#Image3
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   animation: animate-fade-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 100ms 1 normal both;
+   display: inline-block;
+   width: 180px;
+   height: 180px;
+   vertical-align: top;
+}
+#Image3, #wb_Image3:hover
+{
+   margin-top: 5px;
+   transition: margin-top 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#Image3, #wb_Image3
+{
+   transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#Image3, #wb_Image3:active
+{
+   margin-top: 7px;
+   transition: margin-top 50ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text1 div
+{
+   text-align: center;
+}
+#wb_Text1
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text2 div
+{
+   text-align: center;
+}
+#wb_Text2
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text3 div
+{
+   text-align: center;
+}
+#wb_Text3
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text4 div
+{
+   text-align: center;
+}
+#wb_Text4
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Image5
+{
+   margin: 20px 0 10px 0 ;
+   vertical-align: top;
+}
+#Image5
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   animation: animate-fade-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 300ms 1 normal both;
+   display: inline-block;
+   width: 180px;
+   height: 180px;
+   vertical-align: top;
+}
+#Image5, #wb_Image5:hover
+{
+   margin-top: 5px;
+   transition: margin-top 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#Image5, #wb_Image5
+{
+   transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#Image5, #wb_Image5:active
+{
+   margin-top: 7px;
+   transition: margin-top 50ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
+}
+#wb_Text5 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0 0 10px 0 ;
+   text-align: center;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+}
+#Text5-max-width
+{
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 210px;
+   width: 100%;
+}
+#wb_Text5 div
+{
+   text-align: center;
+}
+#wb_Text5
+{
+   display: block;
+   margin: 0 0 10px 0 ;
+   box-sizing: border-box;
+   width: 100%;
+}
+#Button15
+{
+   box-sizing: border-box;
+   line-height: 26px;
+   text-decoration: none;
+   vertical-align: top;
+   border: 1px solid rgba(255,140,0,0.00);
+   border-radius: 0px;
+   background-color: transparent;
+   background-image: none;
+   color: #F5F5F5;
+   font-family: Bahnschrift;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 16px;
+   padding: 2px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+   animation: animate-fade-in-up 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+}
+#Button15:focus
+{
+   outline: 0;
+}
+#Button15:hover
+{
+   border-bottom-color: #DCDCDC;
+   transition: border-bottom-color 350ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#Button15
+{
+   border-bottom-color: rgba(255,255,255,0.00);
+   transition: border-bottom-color 350ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#Button13
+{
+   box-sizing: border-box;
+   line-height: 26px;
+   text-decoration: none;
+   vertical-align: top;
+   border: 1px solid rgba(255,140,0,0.00);
+   border-radius: 0px;
+   background-color: transparent;
+   background-image: none;
+   color: #F5F5F5;
+   font-family: Bahnschrift;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 16px;
+   padding: 2px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+   animation: animate-fade-in-up 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 200ms 1 normal both;
+}
+#Button13:focus
+{
+   outline: 0;
+}
+#Button13:hover
+{
+   border-bottom-color: #DCDCDC;
+   transition: border-bottom-color 350ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#Button13
+{
+   border-bottom-color: rgba(255,255,255,0.00);
+   transition: border-bottom-color 350ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#Button16
+{
+   box-sizing: border-box;
+   line-height: 26px;
+   text-decoration: none;
+   vertical-align: top;
+   border: 1px solid rgba(255,140,0,0.00);
+   border-radius: 0px;
+   background-color: transparent;
+   background-image: none;
+   color: #F5F5F5;
+   font-family: Bahnschrift;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 16px;
+   padding: 1px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+   animation: animate-fade-in-up 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 300ms 1 normal both;
+}
+#Button16:focus
+{
+   outline: 0;
+}
+#Button16:hover
+{
+   border-bottom-color: #DCDCDC;
+   transition: border-bottom-color 350ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#Button16
+{
+   border-bottom-color: rgba(255,255,255,0.00);
+   transition: border-bottom-color 350ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
 #wb_Card3
 {
    display: flex;
-   z-index: 5;
+   z-index: 16;
 }
 #wb_article11Card1
 {
    display: flex;
-   z-index: 2;
+   z-index: 13;
 }
 #wb_Card4
 {
    display: flex;
-   z-index: 6;
+   z-index: 17;
 }
 #Button6
 {
    display: inline-block;
-   width: 129px;
+   width: 85px;
    height: 29px;
    z-index: 1;
 }
 #wb_Card5
 {
    display: flex;
-   z-index: 7;
+   z-index: 18;
 }
 #wb_Card6
 {
    display: flex;
-   z-index: 8;
+   z-index: 19;
+}
+#wb_Image1
+{
+   display: inline-block;
+   width: 180px;
+   height: 180px;
+   z-index: 5;
 }
 #wb_Card7
 {
    display: flex;
+   z-index: 20;
+}
+#wb_Image2
+{
+   display: inline-block;
+   width: 180px;
+   height: 180px;
    z-index: 9;
 }
 #wb_Card8
 {
    display: flex;
-   z-index: 10;
+   z-index: 21;
+}
+#wb_Image3
+{
+   display: inline-block;
+   width: 180px;
+   height: 180px;
+   z-index: 7;
 }
 #wb_Card9
 {
    display: flex;
+   z-index: 22;
+}
+#wb_Image5
+{
+   display: inline-block;
+   width: 180px;
+   height: 180px;
    z-index: 11;
+}
+#Button13
+{
+   display: inline-block;
+   width: 110px;
+   height: 31px;
+   z-index: 3;
+}
+#Button15
+{
+   display: inline-block;
+   width: 110px;
+   height: 31px;
+   z-index: 2;
+}
+#Button16
+{
+   display: inline-block;
+   width: 110px;
+   height: 30px;
+   z-index: 4;
 }
 #wb_Card1
 {
    display: flex;
-   z-index: 3;
+   z-index: 14;
 }
 #wb_Card2
 {
    display: flex;
-   z-index: 4;
-}
-#wb_Heading1
-{
-   display: block;
-   width: 100%;
-   z-index: 0;
+   z-index: 15;
 }
 @media only screen and (min-width: 480px) and (max-width: 969px)
 {
@@ -1103,6 +1671,26 @@ body
 {
    background-color: #101010;
    background-image: none;
+}
+#wb_LayoutGrid11
+{
+   visibility: visible;
+   display: table;
+}
+#wb_LayoutGrid11
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid11
+{
+   height: auto;
+   padding: 10px 0 10px 0;
+}
+#LayoutGrid11
+{
+   width: 100%;
 }
 #wb_LayoutGrid1
 {
@@ -1138,17 +1726,78 @@ body
    border-radius: 0px;
    text-align: center;
 }
-#wb_Heading1
+#wb_LayoutGrid2
 {
-   width: 100%;
    visibility: visible;
-   display: block;
-   margin: 0 0 15px 0 ;
+   display: table;
+}
+#wb_LayoutGrid2
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid2
+{
+   height: auto;
    padding: 0;
+}
+#LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2, #LayoutGrid2 > .col-3, #LayoutGrid2 > .col-4
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#LayoutGrid2 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid2 > .col-2
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid2 > .col-3
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid2 > .col-4
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
 }
 #Button6
 {
-   width: 129px;
+   width: 86px;
    height: 29px;
    visibility: visible;
    display: inline-block;
@@ -1161,8 +1810,8 @@ body
 }
 #wb_article11CardContainer
 {
-   visibility: visible;
-   display: block;
+   visibility: hidden;
+   display: none;
 }
 #article11CardContainer
 {
@@ -1598,8 +2247,8 @@ body
 }
 #wb_CardContainer4
 {
-   visibility: visible;
-   display: block;
+   visibility: hidden;
+   display: none;
 }
 #CardContainer4
 {
@@ -1705,6 +2354,151 @@ body
 #wb_Card9
 {
    text-align: left;
+}
+#wb_Image1
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image1
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Image2
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image2
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Image3
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image3
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Text1
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text2
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text2
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text3
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text3
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text4
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text4
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image5
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Text5
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text5
+{
+   margin: 0;
+   padding: 0;
+}
+#Button15
+{
+   width: 79px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 2px 6px 1px 6px;
+}
+#Button15
+{
+   line-height: 24px;
+}
+#Button13
+{
+   width: 60px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 2px 6px 1px 6px;
+}
+#Button13
+{
+   line-height: 24px;
+}
+#Button16
+{
+   width: 81px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+}
+#Button16
+{
+   line-height: 25px;
 }
 }
 @media only screen and (min-width: 375px) and (max-width: 479px)
@@ -1714,6 +2508,26 @@ body
    background-color: #101010;
    background-image: none;
 }
+#wb_LayoutGrid11
+{
+   visibility: visible;
+   display: table;
+}
+#wb_LayoutGrid11
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid11
+{
+   height: auto;
+   padding: 10px 0 10px 0;
+}
+#LayoutGrid11
+{
+   width: 100%;
+}
 #wb_LayoutGrid1
 {
    visibility: visible;
@@ -1748,17 +2562,78 @@ body
    border-radius: 0px;
    text-align: center;
 }
-#wb_Heading1
+#wb_LayoutGrid2
 {
-   width: 100%;
    visibility: visible;
-   display: block;
-   margin: 0 0 15px 0 ;
+   display: table;
+}
+#wb_LayoutGrid2
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid2
+{
+   height: auto;
    padding: 0;
+}
+#LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2, #LayoutGrid2 > .col-3, #LayoutGrid2 > .col-4
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#LayoutGrid2 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid2 > .col-2
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid2 > .col-3
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid2 > .col-4
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
 }
 #Button6
 {
-   width: 129px;
+   width: 72px;
    height: 29px;
    visibility: visible;
    display: inline-block;
@@ -1771,8 +2646,8 @@ body
 }
 #wb_article11CardContainer
 {
-   visibility: visible;
-   display: block;
+   visibility: hidden;
+   display: none;
 }
 #article11CardContainer
 {
@@ -1880,8 +2755,8 @@ body
 }
 #wb_CardContainer1
 {
-   visibility: visible;
-   display: block;
+   visibility: hidden;
+   display: none;
 }
 #CardContainer1
 {
@@ -2315,6 +3190,151 @@ body
 #wb_Card9
 {
    text-align: left;
+}
+#wb_Image1
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image1
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Image2
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image2
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Image3
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image3
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Text1
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text2
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text2
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text3
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text3
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text4
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text4
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image5
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Text5
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text5
+{
+   margin: 0;
+   padding: 0;
+}
+#Button15
+{
+   width: 73px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 2px 6px 1px 6px;
+}
+#Button15
+{
+   line-height: 24px;
+}
+#Button13
+{
+   width: 55px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 2px 6px 1px 6px;
+}
+#Button13
+{
+   line-height: 24px;
+}
+#Button16
+{
+   width: 73px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+}
+#Button16
+{
+   line-height: 25px;
 }
 }
 @media only screen and (max-width: 374px)
@@ -2324,6 +3344,26 @@ body
    background-color: #101010;
    background-image: none;
 }
+#wb_LayoutGrid11
+{
+   visibility: visible;
+   display: table;
+}
+#wb_LayoutGrid11
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid11
+{
+   height: auto;
+   padding: 10px 0 10px 0;
+}
+#LayoutGrid11
+{
+   width: 100%;
+}
 #wb_LayoutGrid1
 {
    visibility: visible;
@@ -2358,17 +3398,78 @@ body
    border-radius: 0px;
    text-align: center;
 }
-#wb_Heading1
+#wb_LayoutGrid2
 {
-   width: 100%;
    visibility: visible;
-   display: block;
-   margin: 0 0 15px 0 ;
+   display: table;
+}
+#wb_LayoutGrid2
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid2
+{
+   height: auto;
    padding: 0;
+}
+#LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2, #LayoutGrid2 > .col-3, #LayoutGrid2 > .col-4
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#LayoutGrid2 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid2 > .col-2
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid2 > .col-3
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#LayoutGrid2 > .col-4
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
 }
 #Button6
 {
-   width: 129px;
+   width: 65px;
    height: 29px;
    visibility: visible;
    display: inline-block;
@@ -2600,8 +3701,8 @@ body
 }
 #wb_CardContainer2
 {
-   visibility: visible;
-   display: block;
+   visibility: hidden;
+   display: none;
 }
 #CardContainer2
 {
@@ -2611,8 +3712,8 @@ body
 {
    width: auto;
    height: auto;
-   visibility: visible;
-   display: flex;
+   visibility: hidden;
+   display: none;
    margin: 15px 15px 15px 15px;
    flex-grow: 1;
    flex-shrink: 1;
@@ -2818,8 +3919,8 @@ body
 }
 #wb_CardContainer4
 {
-   visibility: visible;
-   display: block;
+   visibility: hidden;
+   display: none;
 }
 #CardContainer4
 {
@@ -2926,4 +4027,161 @@ body
 {
    text-align: left;
 }
+#wb_Image1
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
 }
+#Image1
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Image2
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image2
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Image3
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image3
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Text1
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text2
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text2
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text3
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text3
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text4
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text4
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   width: 180px;
+   height: 180px;
+   visibility: visible;
+   display: inline-block;
+   margin: 20px 0 10px 0 ;
+   padding: 0;
+}
+#Image5
+{
+   width: 180px;
+   height: 180px;
+}
+#wb_Text5
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text5
+{
+   margin: 0;
+   padding: 0;
+}
+#Button15
+{
+   width: 79px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 2px 6px 1px 6px;
+}
+#Button15
+{
+   line-height: 24px;
+}
+#Button13
+{
+   width: 60px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 2px 6px 1px 6px;
+}
+#Button13
+{
+   line-height: 24px;
+}
+#Button16
+{
+   width: 81px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+}
+#Button16
+{
+   line-height: 25px;
+}
+}
+
+    /* Отключить выделение только для wb_Text3 */
+    #wb_Text3 {
+        user-select: none;
+    }
+
+       #wb_Text3 {
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none;    /* Firefox */
+        -ms-user-select: none;     /* Internet Explorer */
+        user-select: none;         /* Standard */
+    }

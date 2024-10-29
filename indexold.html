@@ -5,16 +5,79 @@
 <title>EduLab</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="logo_white.ico" rel="shortcut icon" type="image/x-icon">
+<link href="fontawesome6.min.css" rel="stylesheet">
 <link href="Безымянный1.css" rel="stylesheet">
-<link href="index.css" rel="stylesheet">
+<link href="indexold.css" rel="stylesheet">
 <script src="jquery-3.7.1.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wwb19.min.js"></script>
 <script>
 $(document).ready(function()
 {
+   $('#wb_intro7Heading').addClass('visibility-hidden');
+   $('#wb_intro7Heading').addClass('visibility-hidden');
+   function onScrollHeading1()
+   {
+      var $obj = $("#wb_Heading1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_intro7Heading', 'vanish-in', 100, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_intro7Heading', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Heading1').inViewPort(true))
+   {
+      $('#wb_Heading1').addClass("in-viewport");
+   }
+   onScrollHeading1();
+   $(window).scroll(function(event)
+   {
+      onScrollHeading1();
+   });
+   function onScrollintro7Heading()
+   {
+      var $obj = $("#wb_intro7Heading");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_intro7Heading', 'vanish-in', 100, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_intro7Heading', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_intro7Heading').inViewPort(true))
+   {
+      $('#wb_intro7Heading').addClass("in-viewport");
+   }
+   onScrollintro7Heading();
+   $(window).scroll(function(event)
+   {
+      onScrollintro7Heading();
+   });
+   $("a[href*='#Bookmark2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark2').offset().top }, 500, 'easeInCirc');
+   });
    $("a[href*='#LayoutGrid6']").click(function(event)
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid6').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'linear');
    });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
@@ -25,28 +88,23 @@ $(window).on('load', function()
 </script>
 </head>
 <body>
-<div id="wb_LayoutGrid11">
-<div id="LayoutGrid11">
-<div class="col-1">
-
-<div id="wb_Text3">
-<div id="Text3-max-width">
-<span style="color:#FFFFFF;font-family:'Integral CF';font-size:29px;">EduLab</span>
+<div id="wb_intro7FlexContainer" ondrag="AnimateCss('wb_Heading1', 'background-position-bottom-left', 0, 3000);return false;">
+<div id="intro7FlexContainer-overlay"></div>
+<div id="intro7FlexContainer">
+<div id="wb_Heading1">
+<h1 id="Heading1">EduLab</h1>
 </div>
+<div id="wb_intro7Heading">
+<h1 id="intro7Heading">Программа, созданная с использованием ИИ</h1>
 </div>
-</div>
-<div class="col-2">
-<a id="Button15" href="./project.html">Проект</a>
-<a id="Button14" href="./changelog.html">История</a>
-<a id="Button13" href="./faq.html">F.A.Q</a>
-<a id="Button16" href="https://github.com/Revellison/EduLabApp">Source</a>
-</div>
-<div class="col-3">
+<div id="wb_intro7Icon">
+<a href="#Bookmark2" onclick="MoveObject('wb_LayoutGrid1',0,0);return false;"><div id="intro7Icon"><i class="fa fa-chevron-down"></i></div></a>
 </div>
 </div>
 </div>
 <div id="wb_LayoutGrid6">
 <div id="LayoutGrid6">
+<div class="row">
 <div class="col-1">
 <div id="wb_LayoutGrid7">
 <div id="LayoutGrid7">
@@ -72,6 +130,7 @@ $(window).on('load', function()
 <a id="Button8" href="./faq.html">F.A.Q</a>
 </div>
 <div class="col-9">
+<a id="Button13" href="./index.html">Test</a>
 </div>
 <div class="col-10">
 </div>
@@ -82,13 +141,6 @@ $(window).on('load', function()
 </div>
 </div>
 </div>
-<div id="wb_Image1">
-<img src="images/logo_black.png" id="Image1" alt="" width="169" height="169">
-</div>
-</div>
-<div class="col-2">
-<div id="wb_Text4">
-<span style="color:#DCDCDC;font-family:'Bahnschrift SemiBold';font-size:20px;">Это приложение предоставляет пользователю удобный интерфейс для проведения различных операций с текстом, таких как анализ текста по разным метрикам, перевод текста, а также возможность скачивания видео и учебного материала с популярных платформ(и не очень). </span>
 </div>
 </div>
 </div>
@@ -101,6 +153,7 @@ $(window).on('load', function()
 <a id="Button10" href="./project.html">Проект</a>
 <a id="Button11" href="./changelog.html">История</a>
 <a id="Button12" href="./faq.html">F.A.Q</a>
+<a id="Button15" href="./index.html">Test</a>
 </div>
 </div>
 </div>
@@ -113,6 +166,7 @@ $(window).on('load', function()
 <a id="Button2" href="./project.html">Проект</a>
 <a id="Button4" href="./changelog.html">История</a>
 <a id="Button7" href="./faq.html">F.A.Q</a>
+<a id="Button14" href="./index.html">Test</a>
 </div>
 </div>
 </div>
@@ -130,7 +184,7 @@ $(window).on('load', function()
 </div>
 <div class="col-3">
 <div id="wb_Text1">
-<span style="color:#DCDCDC;font-family:'Bahnschrift SemiBold';font-size:21px;">Это приложение для анализа текста, реализованное с использованием PyQt6. Оно предоставляет пользователю удобный интерфейс для проведения различных операций с текстом, таких как анализ текста по разным метрикам, перевод текста, а также возможность скачивания видео и учебного материала с популярных платформ(и не очень). </span>
+<span style="color:#DCDCDC;font-family:'Bahnschrift SemiBold';font-size:24px;">Это приложение для анализа текста, реализованное с использованием PyQt6. Оно предоставляет пользователю удобный интерфейс для проведения различных операций с текстом, таких как анализ текста по разным метрикам, перевод текста, а также возможность скачивания видео и учебного материала с популярных платформ(и не очень). </span>
 </div>
 <div id="wb_Text2">
 <span style="color:#DCDCDC;font-family:'Bahnschrift SemiBold';font-size:16px;">Это приложение для анализа текста, реализованное с использованием PyQt6. Оно предоставляет пользователю удобный интерфейс для проведения различных операций с текстом, таких как анализ текста по разным метрикам, перевод текста, а также возможность скачивания видео и учебного материала с популярных платформ(и не очень). </span>
@@ -171,6 +225,14 @@ $(window).on('load', function()
 </script>
 
 </div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
 </div>
 </div>
 </div>
@@ -218,6 +280,18 @@ $(window).on('load', function()
   </div>
 </div>
 
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_Bookmark2">
+<div id="Bookmark2"></div>
 
 </div>
 </div>
