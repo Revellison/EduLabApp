@@ -1562,17 +1562,17 @@ body
 #wb_Card3
 {
    display: flex;
-   z-index: 16;
+   z-index: 17;
 }
 #wb_article11Card1
 {
    display: flex;
-   z-index: 13;
+   z-index: 14;
 }
 #wb_Card4
 {
    display: flex;
-   z-index: 17;
+   z-index: 18;
 }
 #Button6
 {
@@ -1584,55 +1584,61 @@ body
 #wb_Card5
 {
    display: flex;
-   z-index: 18;
+   z-index: 19;
 }
 #wb_Card6
 {
    display: flex;
-   z-index: 19;
+   z-index: 20;
 }
 #wb_Image1
 {
    display: inline-block;
    width: 180px;
    height: 180px;
+   z-index: 6;
+}
+#wb_Bookmark1
+{
+   display: block;
+   width: 100%;
    z-index: 5;
 }
 #wb_Card7
 {
    display: flex;
-   z-index: 20;
+   z-index: 21;
 }
 #wb_Image2
 {
    display: inline-block;
    width: 180px;
    height: 180px;
-   z-index: 9;
+   z-index: 10;
 }
 #wb_Card8
 {
    display: flex;
-   z-index: 21;
+   z-index: 22;
 }
 #wb_Image3
 {
    display: inline-block;
    width: 180px;
    height: 180px;
-   z-index: 7;
+   z-index: 8;
 }
 #wb_Card9
 {
    display: flex;
-   z-index: 22;
+   z-index: 23;
 }
 #wb_Image5
 {
    display: inline-block;
    width: 180px;
    height: 180px;
-   z-index: 11;
+   z-index: 12;
 }
 #Button13
 {
@@ -1640,6 +1646,10 @@ body
    width: 110px;
    height: 31px;
    z-index: 3;
+}
+#Bookmark1
+{
+   visibility: hidden;
 }
 #Button15
 {
@@ -1658,12 +1668,12 @@ body
 #wb_Card1
 {
    display: flex;
-   z-index: 14;
+   z-index: 15;
 }
 #wb_Card2
 {
    display: flex;
-   z-index: 15;
+   z-index: 16;
 }
 @media only screen and (min-width: 480px) and (max-width: 969px)
 {
