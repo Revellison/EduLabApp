@@ -78,21 +78,8 @@ $(window).on('load', function()
 });
 </script>
 </head>
-<body /* Убираем синее выделение при нажатии */
-*:focus {
-    outline: none; /* Убирает рамку, если элемент получает фокус */
-}
-
-*:active {
-    -webkit-tap-highlight-color: transparent; /* Убирает синий фон при касании */
-}
-
-/* Для всех элементов на сайте */
-body {
-    -webkit-tap-highlight-color: transparent;
-}
->
- 
+<body>
+  
 <div id="wb_LayoutGrid20">
 <div id="LayoutGrid20">
 <div class="col-1">
@@ -428,14 +415,13 @@ body {
   method="POST"
 >
   <label>
-    Введите свой email:
+    Введите свой Gmail:
     <input type="email" name="email">
   </label>
   <label>
     Объясните вашу проблему:
     <textarea name="message"></textarea>
   </label>
-  <!-- your other form fields go here -->
   <button type="submit">Send</button>
 </form>
 </div>
