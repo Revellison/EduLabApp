@@ -10,7 +10,75 @@
 <link href="fontawesome6.min.css" rel="stylesheet">
 <link href="Безымянный1.css" rel="stylesheet">
 <link href="changelog.css" rel="stylesheet">
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
 <script src="jquery-3.7.1.min.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var edulab124 = document.querySelector('#edulab124');
+   var bsedulab124 = new bootstrap.Modal(edulab124);
+   edulab124.addEventListener('show.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#edulab124 .modal-dialog');
+      dlg.classList.remove('animate-hide');
+      dlg.classList.add('animate-show');
+   });
+   edulab124.addEventListener('hide.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#edulab124 .modal-dialog');
+      dlg.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+      dlg.classList.add('animate-hide');
+   });
+   var EduLab123 = document.querySelector('#EduLab123');
+   var bsEduLab123 = new bootstrap.Modal(EduLab123);
+   EduLab123.addEventListener('show.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#EduLab123 .modal-dialog');
+      dlg.classList.remove('animate-hide');
+      dlg.classList.add('animate-show');
+   });
+   EduLab123.addEventListener('hide.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#EduLab123 .modal-dialog');
+      dlg.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+      dlg.classList.add('animate-hide');
+   });
+   var edulab122 = document.querySelector('#edulab122');
+   var bsedulab122 = new bootstrap.Modal(edulab122);
+   edulab122.addEventListener('show.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#edulab122 .modal-dialog');
+      dlg.classList.remove('animate-hide');
+      dlg.classList.add('animate-show');
+   });
+   edulab122.addEventListener('hide.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#edulab122 .modal-dialog');
+      dlg.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+      dlg.classList.add('animate-hide');
+   });
+   var Integral125 = document.querySelector('#Integral125');
+   var bsIntegral125 = new bootstrap.Modal(Integral125);
+   Integral125.addEventListener('show.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#Integral125 .modal-dialog');
+      dlg.classList.remove('animate-hide');
+      dlg.classList.add('animate-show');
+   });
+   Integral125.addEventListener('hide.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#Integral125 .modal-dialog');
+      dlg.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+      dlg.classList.add('animate-hide');
+   });
+});
+</script>
 <script>
 $(document).ready(function()
 {
@@ -23,6 +91,7 @@ $(window).on('load', function()
 </script>
 </head>
 <body>
+  
 <div id="wb_LayoutGrid20">
 <div id="LayoutGrid20">
 <div class="col-1">
@@ -59,12 +128,12 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4">
 <div class="col-1">
-<div id="wb_Text10">
+<div id="wb_Text11">
 <span style="color:#000000;font-family:'Integral CF';font-size:21px;">INTEGRAL</span>
 </div>
 <div>
 </div>
-<div id="wb_Text11">
+<div id="wb_Text16">
 <span style="color:#000000;font-family:'Integral CF';font-size:21px;">INTEGRAL</span>
 </div>
 <div>
@@ -77,10 +146,9 @@ $(window).on('load', function()
 <a id="Button15" href="./project.html">Проект</a>
 </div>
 <div class="col-4">
-<a id="Button1" href="./database.html">DB</a>
+<a id="Button5" href="https://github.com/Revellison/EduLabApp">Source</a>
 </div>
 <div class="col-5">
-<a id="Button5" href="https://github.com/Revellison/EduLabApp">Source</a>
 </div>
 </div>
 </div>
@@ -125,11 +193,11 @@ $(window).on('load', function()
 </div>
 </div>
 <div class="col-4">
-<div id="wb_Image5">
-<img src="images/logo_black.png" id="Image5" alt="" width="180" height="180">
+<div id="wb_Image4">
+<a href="#" onclick="$('#edulab122').modal('show');return false;"><img src="images/logo (2).png" id="Image4" alt="" width="180" height="180"></a>
 </div>
-<div id="wb_Text3">
-<span style="color:#000000;font-family:'Integral CF';font-size:19px;">EduLab 1.2.3</span>
+<div id="wb_Text8">
+<span style="color:#000000;font-family:'Integral CF';font-size:19px;">EduLab 1.2.2</span>
 </div>
 <div>
 </div>
@@ -211,8 +279,18 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid3">
 <div id="LayoutGrid3">
 <div class="col-1">
+<div id="wb_Image5">
+<a href="#" onclick="$('#EduLab123').modal('show');return false;"><img src="images/logo_white.png" id="Image5" alt="" width="180" height="180"></a>
+</div>
+<div id="wb_Text3">
+<span style="color:#000000;font-family:'Integral CF';font-size:19px;">EduLab 1.2.3</span>
+</div>
+<div>
+</div>
+</div>
+<div class="col-2">
 <div id="wb_Image6">
-<img src="images/placeholder-square.jpg" id="Image6" alt="" width="180" height="180">
+<a href="#" onclick="$('#edulab124').modal('show');return false;"><img src="images/logo_black.png" id="Image6" alt="" width="180" height="180"></a>
 </div>
 <div id="wb_Text4">
 <span style="color:#000000;font-family:'Integral CF';font-size:19px;">EduLab 1.2.4</span>
@@ -220,22 +298,12 @@ $(window).on('load', function()
 <div>
 </div>
 </div>
-<div class="col-2">
+<div class="col-3">
 <div id="wb_Image8">
-<img src="images/placeholder-square.jpg" id="Image8" alt="" width="180" height="180">
+<a href="#" onclick="$('#Integral125').modal('show');return false;"><img src="images/INTECGRALICO.png" id="Image8" alt="" width="180" height="180"></a>
 </div>
 <div id="wb_Text7">
 <span style="color:#000000;font-family:'Integral CF';font-size:19px;">Integral 1.2.5 (soon)</span>
-</div>
-<div>
-</div>
-</div>
-<div class="col-3">
-<div id="wb_Image4">
-<img src="images/placeholder-square.jpg" id="Image4" alt="" width="180" height="180">
-</div>
-<div id="wb_Text8">
-<span style="color:#000000;font-family:'Integral CF';font-size:19px;">///</span>
 </div>
 <div>
 </div>
@@ -248,6 +316,89 @@ $(window).on('load', function()
 <span style="color:#000000;font-family:'Integral CF';font-size:19px;">///</span>
 </div>
 <div>
+</div>
+</div>
+</div>
+</div>
+<div id="edulab124" class="modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<div id="wb_Image10">
+<img src="images/logo_black.png" id="Image10" alt="" width="126" height="126"></div>
+<div id="wb_Text18">
+<span style="color:#000000;font-family:'Arial Black';font-size:16px;">Added</span></div>
+<div id="wb_Text19">
+<span style="color:#000000;font-family:'Trebuchet MS';font-size:16px;">+ interface update</span></div>
+<div id="wb_Text21">
+<span style="color:#000000;font-family:'Trebuchet MS';font-size:16px;">/white theme update</span></div>
+<a id="Button1" href="https://github.com/Revellison/IntegralApp/releases/download/v1.2.4/EduLab.zip">Download</a>
+<div id="wb_Icon1">
+<a href="#" onclick="$('#edulab124').modal('hide');return false;"><div id="Icon1"><i class="Icon1"></i></div></a></div>
+<div id="wb_Text17">
+<span style="color:#000000;font-family:'Arial Black';font-size:19px;">EduLab 1.2.4</span>
+<div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div id="EduLab123" class="modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<div id="wb_Image9">
+<img src="images/logo_black.png" id="Image9" alt="" width="126" height="126"></div>
+<div id="wb_Text6">
+<span style="color:#000000;font-family:'Arial Black';font-size:16px;">Added</span></div>
+<a id="Button2" href="https://github.com/Revellison/IntegralApp/releases/download/v1.2.3/Edulab.portable.zip">Download</a>
+<div id="wb_Icon2">
+<a href="#" onclick="$('#EduLab123').modal('hide');return false;"><div id="Icon2"><i class="Icon2"></i></div></a></div>
+<div id="wb_Text14">
+<span style="color:#000000;font-family:'Arial Black';font-size:19px;">EduLab 1.2.3</span>
+<div>
+</div></div>
+<div id="wb_Text15">
+<span style="color:#000000;font-family:Arial;font-size:16px;">+Added animations<br>+Added white theme<br>+Settings can now be saved. <br>+Custom application backgrounds.<br>+Updated app icon</span></div>
+</div>
+</div>
+</div>
+</div>
+<div id="edulab122" class="modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<div id="wb_Image11">
+<img src="images/logo (2).png" id="Image11" alt="" width="126" height="126"></div>
+<div id="wb_Text12">
+<span style="color:#FF0000;font-family:'Arial Black';font-size:16px;">No access</span></div>
+<div id="wb_Icon3">
+<a href="#" onclick="$('#edulab122').modal('hide');return false;"><div id="Icon3"><i class="Icon3"></i></div></a></div>
+<div id="wb_Text13">
+<span style="color:#000000;font-family:'Arial Black';font-size:19px;">EduLab 1.2.2</span>
+<div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div id="Integral125" class="modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<div id="wb_Image12">
+<img src="images/INTECGRALICO.png" id="Image12" alt="" width="126" height="126"></div>
+<div id="wb_Text20">
+<span style="color:#000000;font-family:'Arial Black';font-size:16px;">Added</span></div>
+<a id="Button4" href="">Soon</a>
+<div id="wb_Icon4">
+<a href="#" onclick="$('#Integral125').modal('hide');return false;"><div id="Icon4"><i class="Icon4"></i></div></a></div>
+<div id="wb_Text22">
+<span style="color:#000000;font-family:'Arial Black';font-size:19px;">Integral 1.2.5</span>
+<div>
+</div></div>
+<div id="wb_Text23">
+<span style="color:#000000;font-family:Arial;font-size:13px;">???</span></div>
 </div>
 </div>
 </div>
