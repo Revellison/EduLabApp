@@ -134,8 +134,8 @@ body
    align-content: center;
    align-self: stretch;
    align-items: center;
-   justify-content: flex-start;
-   text-align: left;
+   justify-content: center;
+   text-align: center;
 }
 #LayoutGrid7 > .col-2
 {
@@ -465,28 +465,6 @@ body
 #wb_Text4
 {
    display: none;
-   margin: 0 0 10px 0 ;
-   width: 163px;
-   height: 26px;
-}
-#wb_Text1 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0 0 10px 0 ;
-   text-align: center;
-   animation: animate-fade-in-down 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
-}
-#wb_Text1 div
-{
-   text-align: center;
-}
-#wb_Text1
-{
-   display: inline-block;
    margin: 0 0 10px 0 ;
    width: 163px;
    height: 26px;
@@ -982,6 +960,23 @@ body
 {
    color: #4F4F4F;
 }
+#wb_Image8
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image8
+{
+   border: 0px solid #000000;
+   border-radius: 15px;
+   padding: 0;
+   animation: animate-fade-in-down 600ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.40);
+   display: inline-block;
+   width: 68px;
+   height: 68px;
+   vertical-align: top;
+}
 #Button6
 {
    display: inline-block;
@@ -1057,6 +1052,13 @@ body
    width: 73px;
    height: 31px;
    z-index: 12;
+}
+#wb_Image8
+{
+   display: inline-block;
+   width: 68px;
+   height: 68px;
+   z-index: 10;
 }
 #wb_Icon7
 {
@@ -1323,18 +1325,6 @@ body
    margin: 0 0 10px 0 ;
    padding: 0;
 }
-#wb_Text1
-{
-   width: 163px;
-   height: 26px;
-   visibility: visible;
-   display: inline-block;
-}
-#wb_Text1
-{
-   margin: 0 0 10px 0 ;
-   padding: 0;
-}
 #wb_Text2
 {
    width: 163px;
@@ -1587,6 +1577,20 @@ body
 {
    color: #C0C0C0;
 }
+#wb_Image8
+{
+   width: 180px;
+   height: 210px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+#Image8
+{
+   width: 180px;
+   height: 210px;
+}
 }
 @media only screen and (max-width: 479px)
 {
@@ -1826,18 +1830,6 @@ body
    display: none;
 }
 #wb_Text4
-{
-   margin: 0 0 10px 0 ;
-   padding: 0;
-}
-#wb_Text1
-{
-   width: 163px;
-   height: 26px;
-   visibility: hidden;
-   display: none;
-}
-#wb_Text1
 {
    margin: 0 0 10px 0 ;
    padding: 0;
@@ -2094,19 +2086,21 @@ body
 {
    color: #C0C0C0;
 }
+#wb_Image8
+{
+   width: 180px;
+   height: 210px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
 }
-
-    /* Отключить выделение только для wb_Text3 */
-    #wb_Text3 {
-        user-select: none;
-    }
-
-       #wb_Text6 {
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none;    /* Firefox */
-        -ms-user-select: none;     /* Internet Explorer */
-        user-select: none;         /* Standard */
-    }
+#Image8
+{
+   width: 180px;
+   height: 210px;
+}
+}
 
     /* Отключить выделение только для wb_Text3 */
     #wb_Text3 {

@@ -134,8 +134,8 @@ body
    align-content: center;
    align-self: stretch;
    align-items: center;
-   justify-content: flex-start;
-   text-align: left;
+   justify-content: center;
+   text-align: center;
 }
 #LayoutGrid4 > .col-2
 {
@@ -3281,27 +3281,22 @@ body
 {
    text-align: left;
 }
-#wb_Text16 
+#wb_Image13
 {
-   background-color: transparent;
-   background-image: none;
+   margin: 0;
+   vertical-align: top;
+}
+#Image13
+{
    border: 0px solid #000000;
-   border-radius: 0px;
+   border-radius: 15px;
    padding: 0;
-   margin: 0 0 10px 0 ;
-   text-align: center;
-   animation: animate-fade-in-down 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
-}
-#wb_Text16 div
-{
-   text-align: center;
-}
-#wb_Text16
-{
+   animation: animate-fade-in-down 600ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.40);
    display: inline-block;
-   margin: 0 0 10px 0 ;
-   width: 163px;
-   height: 26px;
+   width: 68px;
+   height: 68px;
+   vertical-align: top;
 }
 #Integral125
 {
@@ -3383,6 +3378,13 @@ body
    width: 180px;
    height: 180px;
    z-index: 13;
+}
+#wb_Image13
+{
+   display: inline-block;
+   width: 68px;
+   height: 68px;
+   z-index: 9;
 }
 #wb_Icon10
 {
@@ -5310,17 +5312,19 @@ body
    margin: 0;
    padding: 0;
 }
-#wb_Text16
+#wb_Image13
 {
-   width: 163px;
-   height: 26px;
-   visibility: hidden;
-   display: none;
-}
-#wb_Text16
-{
-   margin: 0 0 10px 0 ;
+   width: 180px;
+   height: 210px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
    padding: 0;
+}
+#Image13
+{
+   width: 180px;
+   height: 210px;
 }
 }
 @media only screen and (max-width: 479px)
@@ -6911,17 +6915,19 @@ body
    margin: 0;
    padding: 0;
 }
-#wb_Text16
+#wb_Image13
 {
-   width: 163px;
-   height: 26px;
-   visibility: hidden;
-   display: none;
-}
-#wb_Text16
-{
-   margin: 0 0 10px 0 ;
+   width: 180px;
+   height: 210px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
    padding: 0;
+}
+#Image13
+{
+   width: 180px;
+   height: 210px;
 }
 }
 *:focus {
@@ -6943,18 +6949,6 @@ body {
     }
 
        #wb_Text6 {
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none;    /* Firefox */
-        -ms-user-select: none;     /* Internet Explorer */
-        user-select: none;         /* Standard */
-    }
-
-    /* Отключить выделение только для wb_Text16 */
-    #wb_Text16 {
-        user-select: none;
-    }
-
-       #wb_Text16 {
         -webkit-user-select: none; /* Safari */
         -moz-user-select: none;    /* Firefox */
         -ms-user-select: none;     /* Internet Explorer */

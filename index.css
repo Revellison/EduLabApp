@@ -261,8 +261,8 @@ body
    align-content: center;
    align-self: stretch;
    align-items: center;
-   justify-content: flex-start;
-   text-align: left;
+   justify-content: center;
+   text-align: center;
 }
 #LayoutGrid7 > .col-2
 {
@@ -467,28 +467,6 @@ body
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
-}
-#wb_Text2 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0 0 10px 0 ;
-   text-align: left;
-   animation: transform-scale-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
-}
-#wb_Text2 div
-{
-   text-align: left;
-}
-#wb_Text2
-{
-   display: inline-block;
-   margin: 0 0 10px 0 ;
-   width: 524px;
-   height: 102px;
 }
 #wb_LayoutGrid3
 {
@@ -718,28 +696,6 @@ body
    width: 100% !important;
 }
 }
-#wb_Text6 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0 0 10px 0 ;
-   text-align: center;
-   animation: animate-fade-in-down 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
-}
-#wb_Text6 div
-{
-   text-align: center;
-}
-#wb_Text6
-{
-   display: inline-block;
-   margin: 0 0 10px 0 ;
-   width: 163px;
-   height: 26px;
-}
 #Button14
 {
    box-sizing: border-box;
@@ -759,7 +715,7 @@ body
    text-align: center;
    -webkit-appearance: none;
    margin: 0;
-   animation: animate-fade-in-up 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 100ms 1 normal both;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 100ms 1 normal both;
 }
 #Button14:focus
 {
@@ -794,7 +750,7 @@ body
    text-align: center;
    -webkit-appearance: none;
    margin: 0;
-   animation: animate-fade-in-up 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
 }
 #Button15:focus
 {
@@ -864,7 +820,7 @@ body
    text-align: center;
    -webkit-appearance: none;
    margin: 0;
-   animation: animate-fade-in-up 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 300ms 1 normal both;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 300ms 1 normal both;
 }
 #Button1:focus
 {
@@ -2191,11 +2147,11 @@ body
    border-radius: 0px;
    padding: 0;
    margin: 0;
-   text-align: left;
+   text-align: center;
 }
 #wb_Text15 div
 {
-   text-align: left;
+   text-align: center;
 }
 #Button6
 {
@@ -2245,50 +2201,6 @@ body
 #wb_Text16 div
 {
    text-align: center;
-}
-#wb_Text1 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0 0 10px 0 ;
-   text-align: center;
-   animation: transform-scale-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
-}
-#wb_Text1 div
-{
-   text-align: center;
-}
-#wb_Text1
-{
-   display: inline-block;
-   margin: 0 0 10px 0 ;
-   width: 524px;
-   height: 102px;
-}
-#wb_Text3 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0 0 10px 0 ;
-   text-align: center;
-   animation: transform-scale-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
-}
-#wb_Text3 div
-{
-   text-align: center;
-}
-#wb_Text3
-{
-   display: inline-block;
-   margin: 0 0 10px 0 ;
-   width: 417px;
-   height: 154px;
 }
 #wb_LayoutGrid19
 {
@@ -3619,6 +3531,316 @@ body
 {
    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
 }
+#wb_Picture1
+{
+   margin: 10px 0 10px 0 ;
+   vertical-align: top;
+}
+#Picture1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: transform-scale-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 460px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Picture3
+{
+   margin: 10px 0 10px 0 ;
+   vertical-align: top;
+}
+#Picture3
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: transform-scale-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 420px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Picture4
+{
+   margin: 10px 0 10px 0 ;
+   vertical-align: top;
+}
+#Picture4
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   animation: transform-scale-in 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 320px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Image8
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image8
+{
+   border: 0px solid #000000;
+   border-radius: 15px;
+   padding: 0;
+   animation: animate-fade-in-down 600ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.40);
+   display: inline-block;
+   width: 68px;
+   height: 68px;
+   vertical-align: top;
+}
+#alert .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 15px;
+   margin: 0;
+   animation: clip-path-down-enter 1300ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms 1 normal both;
+   overflow: visible;
+}
+#alert.fade
+{
+   opacity: 1;
+   transition: all 500ms linear;
+}
+#alert .animate-show
+{
+   animation-duration: 500ms;
+   animation-fill-mode: both;
+   animation-name: animate-fade-in;
+}
+#alert .animate-hide
+{
+   animation-duration: 500ms;
+   animation-fill-mode: both;
+   animation-name: animate-fade-in;
+   animation-direction: reverse;
+}
+#alert.modal
+{
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 9999;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#alert .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#alert .modal-open
+{
+   overflow: hidden;
+}
+#alert .modal-dialog
+{
+   position: relative;
+   width: 371px;
+   margin-left: auto;
+   margin-right: auto;
+}
+#alert .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#alert .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #000000;
+}
+#alert .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #000000;
+}
+#alert .modal-body
+{
+   position: relative;
+   width: 371px;
+   height: 257px;
+}
+#alert .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #000000;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0 0;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.show
+{
+   opacity: 0.5 !important;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#alert .modal-content
+{
+   margin: 0;
+   pointer-events: all;
+}
+#alert .modal-title
+{
+   color: #000000;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#alert .modal-dialog
+{
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   pointer-events: none;
+}
+#alert .modal-dialog::before
+{
+   display: block;
+   height: calc(100vh);
+   content: "";
+}
+#wb_Icon15
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid transparent;
+   border-radius: 0px;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+   transition: all 10ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#Icon15
+{
+   height: 25px;
+   width: 25px;
+}
+.Icon15
+{
+   position: relative;
+   left: 0;
+   top: 0;
+   display: inline-block;
+   font-family: "Material Icons";
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+}
+.Icon15:before
+{
+   content: "\e5cd";
+}
+#Icon15 i
+{
+   color: #000000;
+   display: inline-block;
+   font-size: 25px;
+   line-height: 25px;
+   vertical-align: middle;
+   width: 24px;
+   transition: all 10ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#wb_Icon15:hover #Icon15 i
+{
+   color: #DCDCDC;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text1 div
+{
+   text-align: center;
+}
+#wb_Image1
+{
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text2 div
+{
+   text-align: center;
+}
 #Button5
 {
    display: inline-block;
@@ -3633,6 +3855,16 @@ body
    height: 9px;
    z-index: 35;
    position: relative;
+}
+#wb_Text1
+{
+   position: absolute;
+   left: 3px;
+   top: 115px;
+   width: 364px;
+   height: 29px;
+   text-align: center;
+   z-index: 91;
 }
 #Button6
 {
@@ -3660,6 +3892,16 @@ body
    top: 0;
    overflow: visible;
 }
+#wb_Text2
+{
+   position: absolute;
+   left: 157px;
+   top: 174px;
+   width: 50px;
+   height: 29px;
+   text-align: center;
+   z-index: 89;
+}
 #wb_Shape6
 {
    display: inline-block;
@@ -3676,6 +3918,15 @@ body
    left: 0;
    top: 0;
    overflow: visible;
+}
+#wb_Image1
+{
+   position: absolute;
+   left: 163px;
+   top: 64px;
+   width: 38px;
+   height: 38px;
+   z-index: 88;
 }
 #Button8
 {
@@ -3848,7 +4099,7 @@ body
    bottom: 15px;
    width: 65px;
    height: 65px;
-   z-index: 98;
+   z-index: 102;
 }
 #wb_Icon1
 {
@@ -3877,6 +4128,10 @@ body
    z-index: 3;
    position: relative;
 }
+#alert
+{
+   text-align: left;
+}
 #wb_Icon14
 {
    position: absolute;
@@ -3897,7 +4152,7 @@ body
    bottom: 100px;
    width: 65px;
    height: 65px;
-   z-index: 100;
+   z-index: 104;
 }
 #wb_Icon2
 {
@@ -3909,6 +4164,13 @@ body
    text-align: center;
    z-index: 64;
 }
+#wb_Picture1
+{
+   display: block;
+   width: 100%;
+   height: auto;
+   z-index: 24;
+}
 #Shape7
 {
    width: 37px;
@@ -3918,6 +4180,16 @@ body
 {
    width: 25px;
    height: 30px;
+}
+#wb_Icon15
+{
+   position: absolute;
+   left: 334px;
+   top: 9px;
+   width: 25px;
+   height: 25px;
+   text-align: center;
+   z-index: 90;
 }
 #Button14
 {
@@ -3944,6 +4216,13 @@ body
    width: 25px;
    height: 23px;
 }
+#wb_Picture3
+{
+   display: block;
+   width: 100%;
+   height: auto;
+   z-index: 36;
+}
 #Button15
 {
    display: inline-block;
@@ -3967,6 +4246,20 @@ body
 #send
 {
    text-align: left;
+}
+#wb_Picture4
+{
+   display: block;
+   width: 100%;
+   height: auto;
+   z-index: 48;
+}
+#wb_Image8
+{
+   display: inline-block;
+   width: 68px;
+   height: 68px;
+   z-index: 19;
 }
 #wb_Icon5
 {
@@ -3995,10 +4288,11 @@ body
 #wb_Text15
 {
    position: absolute;
-   left: 97px;
+   left: 61px;
    top: 33px;
-   width: 106px;
+   width: 178px;
    height: 19px;
+   text-align: center;
    z-index: 60;
 }
 #Button1
@@ -4341,18 +4635,6 @@ body
    justify-content: center;
    text-align: center;
 }
-#wb_Text2
-{
-   width: 417px;
-   height: 154px;
-   visibility: visible;
-   display: inline-block;
-}
-#wb_Text2
-{
-   margin: 0 0 10px 0 ;
-   padding: 0;
-}
 #wb_LayoutGrid3
 {
    visibility: visible;
@@ -4476,18 +4758,6 @@ body
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    text-align: center;
-}
-#wb_Text6
-{
-   width: 163px;
-   height: 26px;
-   visibility: hidden;
-   display: none;
-}
-#wb_Text6
-{
-   margin: 0 0 10px 0 ;
-   padding: 0;
 }
 #Button14
 {
@@ -5008,7 +5278,7 @@ body
 #Layer1 .modal-body
 {
    width: 283px;
-   height: 300px;
+   height: 250px;
 }
 #wb_Icon1
 {
@@ -5116,9 +5386,9 @@ body
 }
 #wb_Text15
 {
-   left: 88px;
+   left: 59px;
    top: 52px;
-   width: 106px;
+   width: 164px;
    height: 19px;
    visibility: visible;
    display: inline;
@@ -5131,7 +5401,7 @@ body
 #Button6
 {
    left: 72px;
-   top: 208px;
+   top: 185px;
    width: 139px;
    height: 30px;
    visibility: visible;
@@ -5146,7 +5416,7 @@ body
 #wb_Text16
 {
    left: 88px;
-   top: 179px;
+   top: 156px;
    width: 106px;
    height: 19px;
    visibility: visible;
@@ -5155,30 +5425,6 @@ body
 #wb_Text16
 {
    margin: 0;
-   padding: 0;
-}
-#wb_Text1
-{
-   width: 403px;
-   height: 77px;
-   visibility: visible;
-   display: inline-block;
-}
-#wb_Text1
-{
-   margin: 0 0 10px 0 ;
-   padding: 0;
-}
-#wb_Text3
-{
-   width: 417px;
-   height: 154px;
-   visibility: visible;
-   display: inline-block;
-}
-#wb_Text3
-{
-   margin: 0 0 10px 0 ;
    padding: 0;
 }
 #wb_LayoutGrid19
@@ -5728,6 +5974,123 @@ body
    margin: 0;
    padding: 1px 6px 1px 6px;
 }
+#wb_Picture1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 10px 0 10px 0 ;
+   padding: 0;
+}
+#wb_Picture3
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 10px 0 10px 0 ;
+   padding: 0;
+}
+#wb_Picture4
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 10px 0 10px 0 ;
+   padding: 0;
+}
+#wb_Image8
+{
+   width: 180px;
+   height: 210px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+#Image8
+{
+   width: 180px;
+   height: 210px;
+}
+#alert .modal-content
+{
+   visibility: visible;
+   margin: 0;
+}
+#alert .modal-dialog
+{
+   width: 364px;
+}
+#alert .modal-content
+{
+   margin: 0;
+}
+#alert .modal-body
+{
+   width: 364px;
+   height: 248px;
+}
+#wb_Icon15
+{
+   left: 330px;
+   top: 15px;
+   width: 25px;
+   height: 25px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#Icon15
+{
+   width: 25px;
+   height: 25px;
+}
+#Icon15 i
+{
+   line-height: 25px;
+   font-size: 25px;
+   width: 24px;
+}
+#wb_Text1
+{
+   left: 0px;
+   top: 110px;
+   width: 364px;
+   height: 29px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image1
+{
+   left: 163px;
+   top: 54px;
+   width: 38px;
+   height: 38px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text2
+{
+   left: 157px;
+   top: 161px;
+   width: 50px;
+   height: 29px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   margin: 0;
+   padding: 0;
+}
 }
 @media only screen and (max-width: 479px)
 {
@@ -5983,18 +6346,6 @@ body
    justify-content: center;
    text-align: center;
 }
-#wb_Text2
-{
-   width: 270px;
-   height: 154px;
-   visibility: visible;
-   display: inline-block;
-}
-#wb_Text2
-{
-   margin: 0 0 10px 0 ;
-   padding: 0;
-}
 #wb_LayoutGrid3
 {
    visibility: visible;
@@ -6118,18 +6469,6 @@ body
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    text-align: center;
-}
-#wb_Text6
-{
-   width: 163px;
-   height: 26px;
-   visibility: hidden;
-   display: none;
-}
-#wb_Text6
-{
-   margin: 0 0 10px 0 ;
-   padding: 0;
 }
 #Button14
 {
@@ -6650,7 +6989,7 @@ body
 #Layer1 .modal-body
 {
    width: 283px;
-   height: 300px;
+   height: 240px;
 }
 #wb_Icon1
 {
@@ -6758,9 +7097,9 @@ body
 }
 #wb_Text15
 {
-   left: 88px;
+   left: 51px;
    top: 33px;
-   width: 106px;
+   width: 184px;
    height: 19px;
    visibility: visible;
    display: inline;
@@ -6773,7 +7112,7 @@ body
 #Button6
 {
    left: 72px;
-   top: 205px;
+   top: 155px;
    width: 139px;
    height: 30px;
    visibility: visible;
@@ -6788,7 +7127,7 @@ body
 #wb_Text16
 {
    left: 88px;
-   top: 176px;
+   top: 126px;
    width: 106px;
    height: 19px;
    visibility: visible;
@@ -6797,30 +7136,6 @@ body
 #wb_Text16
 {
    margin: 0;
-   padding: 0;
-}
-#wb_Text1
-{
-   width: 270px;
-   height: 154px;
-   visibility: visible;
-   display: inline-block;
-}
-#wb_Text1
-{
-   margin: 0 0 10px 0 ;
-   padding: 0;
-}
-#wb_Text3
-{
-   width: 237px;
-   height: 42px;
-   visibility: visible;
-   display: inline-block;
-}
-#wb_Text3
-{
-   margin: 0 0 10px 0 ;
    padding: 0;
 }
 #wb_LayoutGrid19
@@ -7176,7 +7491,7 @@ body
 #wb_Icon9
 {
    left: 10px;
-   top: 8px;
+   top: 9px;
    width: 45px;
    height: 45px;
    visibility: visible;
@@ -7369,6 +7684,123 @@ body
    margin: 0;
    padding: 1px 6px 1px 6px;
 }
+#wb_Picture1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 10px 0 10px 0 ;
+   padding: 0;
+}
+#wb_Picture3
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 10px 0 10px 0 ;
+   padding: 0;
+}
+#wb_Picture4
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 10px 0 10px 0 ;
+   padding: 0;
+}
+#wb_Image8
+{
+   width: 180px;
+   height: 210px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+#Image8
+{
+   width: 180px;
+   height: 210px;
+}
+#alert .modal-content
+{
+   visibility: visible;
+   margin: 0;
+}
+#alert .modal-dialog
+{
+   width: 332px;
+}
+#alert .modal-content
+{
+   margin: 0;
+}
+#alert .modal-body
+{
+   width: 332px;
+   height: 245px;
+}
+#wb_Icon15
+{
+   left: 296px;
+   top: 12px;
+   width: 25px;
+   height: 25px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#Icon15
+{
+   width: 25px;
+   height: 25px;
+}
+#Icon15 i
+{
+   line-height: 25px;
+   font-size: 25px;
+   width: 24px;
+}
+#wb_Text1
+{
+   left: 28px;
+   top: 98px;
+   width: 276px;
+   height: 29px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image1
+{
+   left: 147px;
+   top: 49px;
+   width: 38px;
+   height: 38px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text2
+{
+   left: 141px;
+   top: 143px;
+   width: 50px;
+   height: 29px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   margin: 0;
+   padding: 0;
+}
 }
 *:focus {
     outline: none; /* Убирает рамку, если элемент получает фокус */
@@ -7420,59 +7852,11 @@ body {
     }
 
     /* Отключить выделение только для wb_Text3 */
-    #wb_Text3 {
-        user-select: none;
-    }
-
-       #wb_Text6 {
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none;    /* Firefox */
-        -ms-user-select: none;     /* Internet Explorer */
-        user-select: none;         /* Standard */
-    }
-
-    /* Отключить выделение только для wb_Text3 */
-    #wb_Text3 {
-        user-select: none;
-    }
-
-       #wb_Text2 {
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none;    /* Firefox */
-        -ms-user-select: none;     /* Internet Explorer */
-        user-select: none;         /* Standard */
-    }
-
-    /* Отключить выделение только для wb_Text3 */
     #Button_2 {
         user-select: none;
     }
 
        #Button_2 {
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none;    /* Firefox */
-        -ms-user-select: none;     /* Internet Explorer */
-        user-select: none;         /* Standard */
-    }
-
-    /* Отключить выделение только для wb_Text3 */
-    #wb_Text3 {
-        user-select: none;
-    }
-
-       #wb_Text2 {
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none;    /* Firefox */
-        -ms-user-select: none;     /* Internet Explorer */
-        user-select: none;         /* Standard */
-    }
-
-    /* Отключить выделение только для wb_Text3 */
-    #wb_Text3 {
-        user-select: none;
-    }
-
-       #wb_Text2 {
         -webkit-user-select: none; /* Safari */
         -moz-user-select: none;    /* Firefox */
         -ms-user-select: none;     /* Internet Explorer */
